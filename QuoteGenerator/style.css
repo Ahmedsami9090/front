@@ -1,0 +1,36 @@
+:root{
+    --header-font: "Briem Hand", cursive;
+    --body-font: "Handlee", cursive;
+}
+body{
+    width: 100vi;
+    height: 100vh;
+
+    header{
+        height: 20% !important;
+        background-color: #FF5632;
+
+        #icon-div{
+
+            img{
+                height: 100%;
+            }
+        }
+        h1{
+            font-family: var(--header-font);
+        }
+    }
+    main{
+        height: 70%;
+        #btn-div{
+            height: 20%;
+        }
+        #quote-view{
+            height: 80%;
+            font-family: var(--body-font);
+            font-size: 30px;
+            font-weight: 600;
+            word-spacing: 3px;
+        }
+    }
+}
