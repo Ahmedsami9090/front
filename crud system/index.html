@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="crud system" />
+    <title>Crud System</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-body-tertiary">
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="container shadow-lg py-4 d-flex flex-column row-gap-4 bg-white">
+        <h1 class="text-center fw-bolder">Crud System</h1>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control border-0 border-bottom"
+            id="p-name"
+            placeholder="p-name"
+            required
+          />
+          <label for="p-name">Product Name</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            list="category"
+            class="form-control border-0 border-bottom"
+            id="p-category"
+            placeholder="p-category"
+            required
+          />
+          <label for="p-category">Product Category</label>
+          <datalist id="category">
+            <option value="TV"></option>
+            <option value="Mobile"></option>
+          </datalist>
+        </div>
+        <div class="form-floating">
+          <input
+            type="number"
+            class="form-control border-0 border-bottom"
+            id="p-price"
+            placeholder="p-price"
+            required
+          />
+          <label for="p-price">Product Price</label>
+        </div>
+        <div class="position-relative">
+          <label
+            for="formFile"
+            id="upload-label"
+            class="form-label position-absolute text-secondary"
+            >Product Image</label
+          >
+          <input
+            class="form-control border-0 border-bottom"
+            type="file"
+            placeholder="formFile"
+            id="formFile"
+            accept="image/*"
+          />
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="p-description"
+            id="p-description"
+            style="height: 100px"
+            required
+          ></textarea>
+          <label for="p-description">Description</label>
+        </div>
+        <div id="btn-id">
+          <button class="btn btn-primary" id="add-btn">Add Product</button>
+          <button class="btn btn-danger" id="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <input id="search" placeholder="search by name" type="text" class="w-50 form-control m-auto my-3">
+    <div class="items bg-body-tertiary">
+      <div class="container">
+        <div class="row" id="row-body">
+        
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

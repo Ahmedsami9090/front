@@ -1,0 +1,10 @@
+.form-control:focus{
+    /* border-color: transparent !important; */
+    /* border-bottom: .0625rem solid #495057; */
+    box-shadow: none !important;
+}
+#upload-label{
+    top: -40%;
+    left: 10px;
+    font-size: 13px;
+}
