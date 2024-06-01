@@ -1,0 +1,40 @@
+:root {
+    --main-font: "Space Grotesk", sans-serif;
+}
+
+body {
+    h1 {
+        font-family: var(--main-font);
+        font-size: 3rem;
+        font-weight: 700;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 45%;
+            height: 100%;
+            border: 4px solid black;
+            border-right: none;
+            top: 0;
+            left: -5px;
+        }
+    }
+
+    .form-control:focus {
+        box-shadow: none !important;
+        background-color: #F8F9FA !important;
+        border-color: black !important;
+    }
+    #result-div{
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+    .bk-item{
+        transition: all .2s ease-out;
+
+        &:hover{
+            background-color: #F8F9FA !important;
+        }
+    }
+}

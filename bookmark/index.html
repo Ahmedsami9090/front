@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="assets/bookmark.png" type="image/x-icon" />
+    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5feeb91176.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="container-fluid bg-body-tertiary pb-5">
+    <div id="add-div" class="container d-flex flex-column align-items-center">
+      <h1 class="mt-5">Bookmarker</h1>
+      <p class="mt-5 fs-4">
+        <i class="fa-regular fa-bookmark"></i> Book Your Favorite sites
+        <i class="fa-regular fa-bookmark"></i>
+      </p>
+      <div class="container shadow col-md-8 mt-3 py-3 rounded-2 bg-white">
+        <div class="input-div">
+          <label for="siteName" class="form-label"
+            ><i class="fa-solid fa-book-bookmark"></i> Site Name</label
+          >
+          <input
+            type="text"
+            name="siteName"
+            id="siteName"
+            min="3"
+            class="form-control"
+          />
+          <div class="alert alert-danger py-1 d-none mt-1">
+            <small class=""></small>
+          </div>
+        </div>
+        <div>
+          <label for="siteUrl" class="form-label mt-3"
+            ><i class="fa-solid fa-link"></i> Site URL</label
+          >
+          <input type="url" name="siteUrl" id="siteUrl" class="form-control" />
+          <div class="alert alert-danger py-1 d-none mt-1">
+            <small></small>
+          </div>
+        </div>
+        <div
+          class="btn-div d-flex flex-column justify-content-center align-items-center mt-5"
+        >
+          <small
+            id="error-general"
+            class="alert alert-danger py-1 d-none"
+          ></small>
+          <button id="add-btn" class="btn btn-danger w-25">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div id="result-div" class="container mt-4 bg-white shadow rounded-2">
+      <div id="bk-marks-header" class="row py-2 visually-hidden">
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <h2 class="fs-6">Index</h2>
+        </div>
+        <div class="col-6 d-flex align-items-center justify-content-center">
+          <h2 class="fs-6">Website Name</h2>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <h2 class="fs-6">Visit</h2>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <h2 class="fs-6">Delete</h2>
+        </div>
+      </div>
+      <div id="bookmarks"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="Bootstrap/JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
