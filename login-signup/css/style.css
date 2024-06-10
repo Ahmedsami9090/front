@@ -1,0 +1,17 @@
+:root{
+    --main-font: "Ubuntu Sans Mono", monospace;
+}
+body{
+
+    div{
+        font-family: var(--main-font);
+
+        #pass-info{
+            font-size: 15px;
+        }
+    }
+    .form-control:focus{
+        box-shadow: 0 0 0 0.25rem #dee2e6;
+        border-color: #dee2e6;
+    }
+}

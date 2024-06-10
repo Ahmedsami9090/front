@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+        <div id="loginPage" class="shadow text-center w-50 p-5 rounded-3 bg-light">
+            <h1 class="fw-bolder">Smart Login System</h1>
+            <div class="input-div mt-4">
+                <input type="email" class="form-control bg-light" placeholder="Enter Your Email" id="userEmail">
+            </div>
+            <div class="input-div mt-4">
+                <input type="password" class="form-control bg-light" placeholder="Enter Your Password" id="userPass">
+            </div>
+            <div class="input-div text-center mt-4">
+                <p id="alert-div" class="alert alert-danger py-0  d-none">ll</p>
+                <button id="logBtn" class="btn btn-light border-secondary-subtle px-4 py-2">Login</button>
+            </div>
+            <div class="text-center mt-4">
+                <p>New user? <a href="signup.html" id="signUpBtn" class="text-decoration-none">Sign up.</a></p>
+            </div>
+        </div>
+        <div id="welcome-page" class="shadow text-center w-50 p-5 rounded-3 bg-light d-none">
+            <button id="logOutBtn" class="btn btn-light border-secondary-subtle px-4 py-2">Log out</button>
+        </div>
+    </div>
+    <script src="Bootstrap/JS/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
