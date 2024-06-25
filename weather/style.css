@@ -1,0 +1,111 @@
+body {
+    font-family: monospace;
+
+    nav {
+        background-color: #1E202B !important;
+
+        .navbar-brand {
+            color: white !important;
+
+            i {
+                color: #0AABDB !important;
+            }
+        }
+
+        .navbar-toggler {
+            background-color: white !important;
+            /* color: beige !important; */
+        }
+
+        ul {
+
+            a {
+                color: white !important;
+                border: 2px solid #1E202B !important;
+                border-radius: 30px;
+                transition: all .3s ease-out !important;
+
+
+                &:hover {
+                    border: 2px solid #0AABDB !important;
+                }
+            }
+        }
+
+
+        .active {
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: #0AABDB;
+        }
+    }
+
+    #home {
+        /* height: 80vh; */
+        background-image: url(assets/background.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-color: #1E202B;
+
+        .search-input {
+
+            .form-control {
+                background-color: #1E202B;
+                opacity: .8;
+                color: white !important;
+                border: none;
+
+                &::placeholder {
+                    color: white;
+                    opacity: .8;
+                }
+
+                &:focus {
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        #weather-info {
+            .day-weather {
+                background-color: #262936;
+
+                .item-1, .item-3 {
+                    background-color: #1E202B;
+                }
+            }
+        }
+
+    }
+
+
+    footer {
+        background-color: #262936;
+
+        input {
+            background-color: #1E202B !important;
+            border: none !important;
+
+            &::placeholder {
+                color: white !important;
+                opacity: .7 !important;
+            }
+
+            &:focus {
+                box-shadow: none !important;
+                border: none !important;
+            }
+        }
+
+        button {
+            background-color: #0AABDB !important;
+            color: white !important;
+        }
+
+        i {
+            color: #0AABDB !important;
+        }
+    }
+
+}

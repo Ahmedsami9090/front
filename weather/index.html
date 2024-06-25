@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather now</title>
+    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5feeb91176.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md py-5">
+      <div class="container">
+        <a class="navbar-brand fs-4 fw-bold" href="#home"
+          ><i class="fa-solid fa-cloud-sun fs-1"></i> Weather</a
+        >
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item ps-3">
+              <a
+                class="nav-link active px-4 py-1"
+                href="#home"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link px-4 py-1" href="#">News</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link px-4 py-1" href="#">Live camera</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link px-4 py-1" href="#">Photos</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link px-4 py-1" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container-fluid d-flex flex-column align-items-center justify-content-around py-5"
+      id="home"
+    >
+      <div class="search-input container col-md-6 mt-5">
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="searchInput"
+          aria-describedby="helpId"
+          placeholder="Find your location.."
+        />
+      </div>
+      <div
+        class="container d-flex flex-column flex-md-row mt-5 column-gap-3"
+        id="weather-info"
+      ></div>
+    </div>
+    <footer class="container-fluid py-5">
+      <div class="container d-flex flex-column flex-md-row">
+        <div class="d-flex col-md-6 mt-2">
+          <input
+            type="email"
+            class="form-control rounded-end-0 rounded-start-pill text-white"
+            name=""
+            id="subscribeInput"
+            aria-describedby="helpId"
+            placeholder="Enter your Email.."
+          />
+          <button class="btn rounded-start-0 rounded-end-pill">
+            subscribe
+          </button>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center fs-3 mt-2">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter ms-2"></i></a>
+          <a href=""><i class="fa-brands fa-google-plus ms-2"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest ms-2"></i></a>
+        </div>
+      </div>
+      <h6 class="text-white col-md-6 mt-4 text-center mx-auto">
+        Copyright 2014 Company name. Designed by Themezy. All rights reserved
+      </h6>
+    </footer>
+    <script src="script.js"></script>
+    <script src="Bootstrap/JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
