@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5feeb91176.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="games-displayed">
+      <div class="space"></div>
+      <nav class="navbar navbar-expand-sm navbar-light container shadow-lg">
+        <div class="container">
+          <a class="navbar-brand fw-semibold fs-1" href="#"
+            ><i class="fa-solid fa-headset"></i> GAMES</a
+          >
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 fs-6 fw-semibold">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">shooter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">sailing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">permadeath</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">superhero</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">pixel</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="space"></div>
+      <div class="container games">
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="displayGames"></div>
+      </div>
+    </section>
+    <section id="game-selected" class="d-none vh-100"></section>
+    <script src="Bootstrap/JS/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

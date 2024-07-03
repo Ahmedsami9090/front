@@ -1,0 +1,93 @@
+body {
+    font-family: monospace;
+    background-color: #272B30;
+
+    #game-selected {
+        height: 70vh;
+        width: 100vi;
+
+        .gameInfo {
+            background-color: #3A497B;
+            border-radius: 5px;
+            padding: 1px 2px;
+        }
+
+        #goBackBtn {
+            i {
+                transition: all .2s ease-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+        }
+
+        .playGame {
+            background-color: transparent !important;
+            color: white !important;
+            transition: all .2s ease-out;
+            padding: 3px 5px;
+            margin-top: 5px !important;
+
+            &:hover {
+                background-color: white !important;
+                color: #272B30 !important;
+            }
+        }
+    }
+
+    nav {
+        background-color: #3A497B !important;
+        border-radius: 40px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        .navbar-brand {
+            letter-spacing: 2px;
+        }
+
+        .active {
+            color: #0A8BBE !important;
+        }
+
+        a {
+            color: #fff !important;
+        }
+    }
+
+    .space {
+        width: 100%;
+        height: 4rem;
+    }
+
+    .games {
+        .desc-div, .card-title {
+            overflow: hidden !important;
+            white-space: nowrap !important;
+            text-overflow: ellipsis !important;
+        }
+    }
+
+    #displayGames {
+        .col {
+            transition: all .2s ease-out;
+
+            img {
+                opacity: 50% !important;
+                transition: all .2s ease-out;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &:hover img {
+                opacity: 100% !important;
+            }
+
+        }
+    }
+}
