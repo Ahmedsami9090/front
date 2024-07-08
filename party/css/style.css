@@ -1,0 +1,156 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+
+    #home {
+        /* **************************home*************************** */
+        background-image: url(../assets/img/events-heavenly-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        #nav-main {
+            width: 0px;
+            transition: all .5s ease-out;
+            z-index: 1;
+            position: fixed !important;
+
+            #nav-list {
+                overflow: hidden;
+
+                li {
+                    a {
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 700;
+                        transition: all .5s ease-out;
+
+                        &:hover {
+                            color: rgb(133, 3, 3);
+                        }
+
+                    }
+                }
+            }
+
+            #nav-icon {
+                h3 {
+                    color: #fff;
+                    opacity: 0.5;
+                    font-weight: 700;
+                    cursor: pointer;
+                    text-wrap: nowrap;
+                    transition: all .3s ease-out;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+
+        .bg-overlay {
+            position: absolute;
+            background-color: rgba(214, 46, 51, 0.6);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+
+            h1 {
+                font-size: 80px;
+                font-weight: 900;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    #details {
+
+        /* **************************details*************************** */
+        .singer-name {
+            background-color: #E68285;
+            color: #fff;
+            cursor: pointer;
+
+            h3 {
+                font-weight: 600;
+            }
+        }
+
+        .singer-details {
+            background-color: #CCCCCC;
+
+            p {
+                padding: 20px 90px;
+            }
+        }
+    }
+
+    #duration {
+        /* **************************duration*************************** */
+        background-image: url(../assets/img/invitation-2508607__340.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 350px;
+
+        .bg-overlay {
+            position: absolute;
+            background-color: rgba(214, 46, 51, 0.6);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+
+            h1 {
+                font-size: 80px;
+                font-weight: 900;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .container {
+            .row {
+                z-index: 1 !important;
+            }
+        }
+    }
+
+    #contact {
+
+        /* **************************contact*************************** */
+        h4 {
+            a {
+                color: rgba(214, 46, 51, 0.6);
+            }
+        }
+
+        #socials {
+            a {
+                i {
+                    transition: all .3s ease-out;
+
+                    &:hover {
+                        background-color: rgba(214, 46, 51);
+                        color: #fff !important;
+                        border-color: #fff !important;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
