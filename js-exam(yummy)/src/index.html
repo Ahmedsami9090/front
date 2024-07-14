@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="img/smily.png" type="image/x-icon">
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  </head>
+  <body class="bg-black">
+    <section id="navBar" class="z-50 text-white fixed top-0 left-0 h-screen bg-black flex justify-center items-center"
+    >
+      <div id="menu-list" class=" h-full flex flex-col justify-between overflow-hidden">
+        <div id="list" class="pt-6 ps-3 text-lg overflow-hidden">
+          <ul>
+            <li id="Search" class="py-3 "><a href="#">Search</a></li>
+            <li id="Categories" class="py-3"><a href="#">Categories</a></li>
+            <li id="Area" class="py-3"><a href="#">Area</a></li>
+            <li id="Ingredients" class="py-3"><a href="#">Ingredients</a></li>
+            <li id="Contact" class="py-3"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div id="social" class="pb-6 px-3">
+            <div class="mb-3">
+                <span class=""><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+                <span class="ms-2"><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+                <span class="ms-2"><a href="#"><i class="fa-solid fa-globe"></i></a></span>
+            </div>
+            <h2>Copyright Â© 2019 All Rights Reserved.</h2>
+        </div>
+      </div>
+      <div id="menu-icon" class="bg-white h-full flex items-center px-4 flex-col justify-between">
+        <div class="h-20 pt-3">
+            <img src="img/smily.png" class="h-full " alt="">
+        </div>
+        <h2 class="text-4xl text-black"><i id="menu-btn" class="fa-solid fa-bars cursor-pointer"></i></h2>
+        <div class="text-black pb-3">
+            <h2><i class="fa-solid fa-globe"></i></h2>
+            <h2><i class="fa-solid fa-share-nodes"></i></h2>
+        </div>
+      </div>
+    </section>
+    <section id="search-sec" class="mx-32 py-10 hidden">
+      <div class="container w-full flex justify-center gap-2">
+        <div class="w-1/2">
+          <input type="text" id="nameSearch" placeholder="Search by name.." class="bg-gray-800 w-full ps-3 rounded-md">
+        </div>
+        <div class="w-1/2">
+          <input type="text" id="letterSearch" placeholder="Search by first Letter.." class="bg-gray-800 w-full ps-3 rounded-md">
+        </div>
+      </div>
+    </section>
+    <section class="md:mx-32 mt-16" id="result-sec">
+        <div id="result-view" class="container grid md:grid-cols-4 sm:grid-cols-1 gap-6">
+          <span class="loader"></span>
+        </div>
+    </section>
+    <section class="mx-32 mt-16" id="meal-details">
+    </section>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
